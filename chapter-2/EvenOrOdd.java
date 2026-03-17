@@ -11,12 +11,8 @@ public class EvenOrOdd {
 
 		if (number % 3  == 0)
 			System.out.printf("%d is divisible by 3", number);
-		if (number % 3 == 1)
+		if (number % 3 != 0)
 			System.out.printf("%d is not divisible by 3", number);
-		if (number % 3 == 2)
-			System.out.printf("%d is not divisible by 3", number);
-
-
 
 	}
 }
