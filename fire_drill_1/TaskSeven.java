@@ -5,14 +5,15 @@ public class TaskSeven{
 	
 	for (int i = 0; i++ < 10;) {
 	if (i % 4 == 0) {
-		int mul = i;
-		int j,sum = 0;
+		int mul = 1;
+		int j= 0;
+		int sum = 0;
 		while (j < 5) {
-		System.out.printf("%d ",mul);
 		mul = mul * i;
 		j++;
 		sum += mul;
 		}
+		System.out.printf("%d ",sum);
 		System.out.printf(" ");
 	}
     }
