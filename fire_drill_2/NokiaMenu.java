@@ -85,7 +85,24 @@ public class NokiaMenu {
                     default -> System.out.println("Invalid option.");
                 }
             }
+            case 2 -> {
+                prompt = """
+                        Messages
 
+                        1. Write messages
+                        2. Inbox
+                        3. Outbox
+                        4. Picture messages
+                        5. Templates
+                        6. Smileys
+                        7. Message settings
+                        8. Info service
+                        9. Voice mailbox number
+                        10. Service command editor
+                        0. Back
+                        """;
+                System.out.println(prompt);
+            }
             default -> System.out.println("case2 track it");
         }
     }
