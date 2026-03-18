@@ -234,7 +234,21 @@ public class NokiaMenu {
                     default -> System.out.println("Invalid option.");
                 }
             } //9
-            case 10 -> {} //10
+            case 10 -> {
+                System.out.println("Reminders");
+                prompt = """
+                Reminders
+                1. Reminders
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {    
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("Reminders");
+                    default -> System.out.println("Invalid option.");
+                }
+            } //10
             case 11 -> {} //11
             case 12 -> {} //12
             case 13 -> {} //13
