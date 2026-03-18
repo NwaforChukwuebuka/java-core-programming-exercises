@@ -187,8 +187,140 @@ public class NokiaMenu {
                 };
             }
             case 4 -> {} //4
-            case 5 -> {} //5
-            case 6 -> {} //6
+            case 5 -> {
+                System.out.println("Tones");
+                prompt = """
+                Tones
+                1. Ringing tone
+                2. Ringing volume
+                3. Incoming call alert
+                4. Composer
+                5. Message alert tone
+                6. Keypad tones
+                7. Warning and game tones
+                8. Vibrating alert
+                9. Screen saver
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("Tones > Ringing tone");
+                    case 2 -> System.out.println("Tones > Ringing volume");
+                    case 3 -> System.out.println("Tones > Incoming call alert");
+                    case 4 -> System.out.println("Tones > Composer");
+                    case 5 -> System.out.println("Tones > Message alert tone");
+                    case 6 -> System.out.println("Tones > Keypad tones");
+                    case 7 -> System.out.println("Tones > Warning and game tones");
+                    case 8 -> System.out.println("Tones > Vibrating alert");
+                    case 9 -> System.out.println("Tones > Screen saver");
+                    default -> System.out.println("Invalid option.");
+                }
+            } //5
+            case 6 -> {
+                System.out.println("Settings");
+                prompt = """
+                Settings
+                1. Call settings
+                2. Phone settings
+                3. Security settings
+                4. Restore factory settings
+                0. Back
+                """;    
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> {
+                        prompt = """
+                        Settings > Call settings
+                        1. Automatic redial
+                        2. Speed dialling
+                        3. Call waiting options
+                        4. Own number sending
+                        5. Phone line in use
+                        6. Automatic answer
+                        0. Back
+                        """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Settings > Call settings > Automatic redial");
+                            case 2 -> System.out.println("Settings > Call settings > Speed dialling");
+                            case 3 -> System.out.println("Settings > Call settings > Call waiting options");
+                            case 4 -> System.out.println("Settings > Call settings > Own number sending");
+                            case 5 -> System.out.println("Settings > Call settings > Phone line in use");
+                            case 6 -> System.out.println("Settings > Call settings > Automatic answer");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                    case 2 -> {
+                        prompt = """
+                        Settings > Phone settings
+                        1. Language
+                        2. Cell info display
+                        3. Welcome note
+                        4. Network selection
+                        5. Lights
+                        6. Confirm SIM service actions
+                        0. Back
+                        """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Settings > Phone settings > Language");
+                            case 2 -> System.out.println("Settings > Phone settings > Cell info display");
+                            case 3 -> System.out.println("Settings > Phone settings > Welcome note");
+                            case 4 -> System.out.println("Settings > Phone settings > Network selection");
+                            case 5 -> System.out.println("Settings > Phone settings > Lights");
+                            case 6 -> System.out.println("Settings > Phone settings > Confirm SIM service actions");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                    case 3 -> {
+                        prompt = """
+                        Settings > Security settings
+                        1. PIN code request
+                        2. Call barring service
+                        3. Fixed dialling
+                        4. Closed user group
+                        5. Phone security
+                        6. Change access codes
+                        0. Back
+                        """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Settings > Security settings > PIN code request");
+                            case 2 -> System.out.println("Settings > Security settings > Call barring service");
+                            case 3 -> System.out.println("Settings > Security settings > Fixed dialling");
+                            case 4 -> System.out.println("Settings > Security settings > Closed user group");
+                            case 5 -> System.out.println("Settings > Security settings > Phone security");
+                            case 6 -> System.out.println("Settings > Security settings > Change access codes");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                    case 4 -> {
+                        prompt = """
+                        Settings > Restore factory settings
+                        1. Restore factory settings
+                        0. Back
+                        """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Settings > Restore factory settings");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                    default -> System.out.println("Invalid option.");
+                }
+            } //6
             case 7 -> {
                 System.out.println("Call register");
                 prompt = """
