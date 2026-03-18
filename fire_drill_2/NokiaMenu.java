@@ -102,6 +102,38 @@ public class NokiaMenu {
                         0. Back
                         """;
                 System.out.println(prompt);
+                userInput = input.nextInt();
+
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("Messages > Write messages");
+                    case 2 -> System.out.println("Messages > Inbox");
+                    case 3 -> System.out.println("Messages > Outbox");
+                    case 4 -> System.out.println("Messages > Picture messages");
+                    case 5 -> System.out.println("Messages > Templates");
+                    case 6 -> System.out.println("Messages > Smileys");
+                    case 7 -> {
+                        prompt = """
+                                Messages > Message settings
+
+                                1. Set 1
+                                2. Common
+                                0. Back
+                                """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Messages > Message settings > Set 1");
+                            case 2 -> System.out.println("Messages > Message settings > Common");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                    case 8 -> System.out.println("Messages > Info service");
+                    case 9 -> System.out.println("Messages > Voice mailbox number");
+                    case 10 -> System.out.println("Messages > Service command editor");
+                    default -> System.out.println("Invalid option.");
+                }
             }
             default -> System.out.println("case2 track it");
         }
