@@ -250,7 +250,21 @@ public class NokiaMenu {
                 }
             } //10
             case 11 -> {} //11
-            case 12 -> {} //12
+            case 12 -> {
+                System.out.println("Profiles");
+                prompt = """
+                Profiles
+                1. Profiles
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("Profiles");
+                    default -> System.out.println("Invalid option.");
+                }
+            } //12
             case 13 -> {} //13
             default -> System.out.println("case2 track it");
         }
