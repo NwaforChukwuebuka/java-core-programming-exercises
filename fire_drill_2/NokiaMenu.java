@@ -249,7 +249,48 @@ public class NokiaMenu {
                     default -> System.out.println("Invalid option.");
                 }
             } //10
-            case 11 -> {} //11
+            case 11 -> {
+                System.out.println("Clock");
+                prompt = """
+                Clock
+                1. Alarm clock
+                2. Clock settings
+                3. Date setting
+                4. Stopwatch
+                5. Countdown timer
+                6. Auto update of date and time
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> {
+                        prompt = """
+                        Clock
+                        1. Alarm clock
+                        2. Clock settings
+                        3. Date setting
+                        4. Stopwatch
+                        5. Countdown timer
+                        6. Auto update of date and time
+                        0. Back
+                        """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Clock > Alarm clock");
+                            case 2 -> System.out.println("Clock > Clock settings");
+                            case 3 -> System.out.println("Clock > Date setting");
+                            case 4 -> System.out.println("Clock > Stopwatch");
+                            case 5 -> System.out.println("Clock > Countdown timer");
+                            case 6 -> System.out.println("Clock > Auto update of date and time");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                }
+            } //11
             case 12 -> {
                 System.out.println("Profiles");
                 prompt = """
