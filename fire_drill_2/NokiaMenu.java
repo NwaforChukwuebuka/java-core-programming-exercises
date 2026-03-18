@@ -124,7 +124,8 @@ public class NokiaMenu {
                         userInput = input.nextInt();
                         switch (userInput) {
                             case 0 -> System.out.println("Back");
-                            case 1 -> System.out.println("Messages > Message settings > Set 1"){
+                            case 1 -> {
+                                System.out.println("Messages > Message settings > Set 1");
                                 prompt = """
                                 Messages > Message settings > Set 1
                                 1. Message centre number
@@ -141,15 +142,16 @@ public class NokiaMenu {
                                     case 3 -> System.out.println("Messages > Message settings > Set 1 > Message validity");
                                     default -> System.out.println("Invalid option.");
                                 }
-                            };
+                            }
                             case 2 -> {
                                 prompt = """
-                                Messages > Message settings > Common
-                                1. Delivery reports
-                                2. Reply via same centre
-                                3. Character support
-                                0. Back
-                                """;
+                                        Messages > Message settings > Common
+
+                                        1. Delivery reports
+                                        2. Reply via same centre
+                                        3. Character support
+                                        0. Back
+                                        """;
                                 System.out.println(prompt);
                                 userInput = input.nextInt();
                                 switch (userInput) {
@@ -158,6 +160,8 @@ public class NokiaMenu {
                                     case 2 -> System.out.println("Messages > Message settings > Common > Reply via same centre");
                                     case 3 -> System.out.println("Messages > Message settings > Common > Character support");
                                     default -> System.out.println("Invalid option.");
+                                }
+                            }
                             default -> System.out.println("Invalid option.");
                         }
                     }
@@ -167,7 +171,23 @@ public class NokiaMenu {
                     default -> System.out.println("Invalid option.");
                 }
             }
+            case 3 -> {
+                prompt="""
+                Chat
+
+                1. Chat
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("Chat");
+                    default -> System.out.println("Invalid option.");
+                };
+            }
             default -> System.out.println("case2 track it");
         }
     }
 }
+    
