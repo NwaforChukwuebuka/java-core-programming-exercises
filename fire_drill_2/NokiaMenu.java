@@ -186,7 +186,88 @@ public class NokiaMenu {
                     default -> System.out.println("Invalid option.");
                 };
             }
-            case 4 -> {} //4
+            case 4 -> {
+                System.out.println("Call register");
+                prompt = """
+                Call register
+                1. Missed calls
+                2. Received calls
+                3. Dialled numbers
+                4. Erase recent call lists
+                5. Show call duration
+                6. Show call costs
+                7. Call cost settings
+                8. Prepaid credit
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("Call register > Missed calls");
+                    case 2 -> System.out.println("Call register > Received calls");
+                    case 3 -> System.out.println("Call register > Dialled numbers");
+                    case 4 -> System.out.println("Call register > Erase recent call lists");
+                    case 5 -> {
+                        prompt = """
+                        Call register > Show call duration
+                        1. Last call duration
+                        2. All calls' duration
+                        3. Received calls' duration
+                        4. Dialled calls' duration
+                        5. Clear timers
+                        0. Back
+                        """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Call register > Show call duration > Last call duration");
+                            case 2 -> System.out.println("Call register > Show call duration > All calls' duration");
+                            case 3 -> System.out.println("Call register > Show call duration > Received calls' duration");
+                            case 4 -> System.out.println("Call register > Show call duration > Dialled calls' duration");
+                            case 5 -> System.out.println("Call register > Show call duration > Clear timers");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                    case 6 -> {
+                        prompt = """
+                        Call register > Show call costs
+                        1. Last call cost
+                        2. All calls' cost
+                        3. Clear counters
+                        0. Back
+                        """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Call register > Show call costs > Last call cost");
+                            case 2 -> System.out.println("Call register > Show call costs > All calls' cost");
+                            case 3 -> System.out.println("Call register > Show call costs > Clear counters");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                    case 7 -> {
+                        prompt = """
+                        Call register > Call cost settings
+                        1. Call cost limit
+                        2. Show costs in
+                        0. Back
+                        """;
+                        System.out.println(prompt);
+                        userInput = input.nextInt();
+                        switch (userInput) {
+                            case 0 -> System.out.println("Back");
+                            case 1 -> System.out.println("Call register > Call cost settings > Call cost limit");
+                            case 2 -> System.out.println("Call register > Call cost settings > Show costs in");
+                            default -> System.out.println("Invalid option.");
+                        }
+                    }
+                    case 8 -> System.out.println("Call register > Prepaid credit");
+                    default -> System.out.println("Invalid option.");
+                }
+            } //4
             case 5 -> {
                 System.out.println("Tones");
                 prompt = """
