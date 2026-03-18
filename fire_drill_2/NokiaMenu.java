@@ -189,7 +189,21 @@ public class NokiaMenu {
             case 4 -> {} //4
             case 5 -> {} //5
             case 6 -> {} //6
-            case 7 -> {} //7
+            case 7 -> {
+                System.out.println("Call register");
+                prompt = """
+                Call divert
+                1. Call divert
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("Call divert");
+                    default -> System.out.println("Invalid option.");
+                }   
+            } //7
             case 8 -> {} //8
             case 9 -> {} //9
             case 10 -> {} //10
