@@ -265,7 +265,21 @@ public class NokiaMenu {
                     default -> System.out.println("Invalid option.");
                 }
             } //12
-            case 13 -> {} //13
+            case 13 -> {
+                System.out.println("SIM services");
+                prompt = """
+                SIM services
+                1. SIM services
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("SIM services");
+                    default -> System.out.println("Invalid option.");
+                }
+            } //13
             default -> System.out.println("case2 track it");
         }
     }
