@@ -124,8 +124,40 @@ public class NokiaMenu {
                         userInput = input.nextInt();
                         switch (userInput) {
                             case 0 -> System.out.println("Back");
-                            case 1 -> System.out.println("Messages > Message settings > Set 1");
-                            case 2 -> System.out.println("Messages > Message settings > Common");
+                            case 1 -> System.out.println("Messages > Message settings > Set 1"){
+                                prompt = """
+                                Messages > Message settings > Set 1
+                                1. Message centre number
+                                2. Messages sent as
+                                3. Message validity
+                                0. Back
+                                """;
+                                System.out.println(prompt);
+                                userInput = input.nextInt();
+                                switch (userInput) {
+                                    case 0 -> System.out.println("Back");
+                                    case 1 -> System.out.println("Messages > Message settings > Set 1 > Message centre number");
+                                    case 2 -> System.out.println("Messages > Message settings > Set 1 > Messages sent as");
+                                    case 3 -> System.out.println("Messages > Message settings > Set 1 > Message validity");
+                                    default -> System.out.println("Invalid option.");
+                                }
+                            };
+                            case 2 -> {
+                                prompt = """
+                                Messages > Message settings > Common
+                                1. Delivery reports
+                                2. Reply via same centre
+                                3. Character support
+                                0. Back
+                                """;
+                                System.out.println(prompt);
+                                userInput = input.nextInt();
+                                switch (userInput) {
+                                    case 0 -> System.out.println("Back");
+                                    case 1 -> System.out.println("Messages > Message settings > Common > Delivery reports");
+                                    case 2 -> System.out.println("Messages > Message settings > Common > Reply via same centre");
+                                    case 3 -> System.out.println("Messages > Message settings > Common > Character support");
+                                    default -> System.out.println("Invalid option.");
                             default -> System.out.println("Invalid option.");
                         }
                     }
