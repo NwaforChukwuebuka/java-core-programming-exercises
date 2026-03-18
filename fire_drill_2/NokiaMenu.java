@@ -186,6 +186,16 @@ public class NokiaMenu {
                     default -> System.out.println("Invalid option.");
                 };
             }
+            case 4 -> {} //4
+            case 5 -> {} //5
+            case 6 -> {} //6
+            case 7 -> {} //7
+            case 8 -> {} //8
+            case 9 -> {} //9
+            case 10 -> {} //10
+            case 11 -> {} //11
+            case 12 -> {} //12
+            case 13 -> {} //13
             default -> System.out.println("case2 track it");
         }
     }
