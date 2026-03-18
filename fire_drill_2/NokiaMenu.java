@@ -219,7 +219,21 @@ public class NokiaMenu {
                     default -> System.out.println("Invalid option.");
                 }
             } //8
-            case 9 -> {} //9
+            case 9 -> {
+                System.out.println("Calculator");
+                prompt = """
+                Calculator
+                1. Calculator
+                0. Back
+                """;
+                System.out.println(prompt);
+                userInput = input.nextInt();
+                switch (userInput) {
+                    case 0 -> System.out.println("Back");
+                    case 1 -> System.out.println("Calculator");
+                    default -> System.out.println("Invalid option.");
+                }
+            } //9
             case 10 -> {} //10
             case 11 -> {} //11
             case 12 -> {} //12
