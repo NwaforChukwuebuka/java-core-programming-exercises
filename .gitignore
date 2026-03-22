@@ -2,3 +2,8 @@
 .idea/
 out/
 *.iml
+
+# Local helpers / scratch — not published
+/runjava.ps1
+dayThree/fireDrill1/runjava.ps1
+dayThree/fireDrill1/test.py
