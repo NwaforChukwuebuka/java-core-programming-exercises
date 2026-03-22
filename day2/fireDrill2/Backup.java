@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NokiaMenu {
+public class Backup {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

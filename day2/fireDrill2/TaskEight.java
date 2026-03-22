@@ -15,7 +15,7 @@ public class TaskEight{
 			count++;
 		}
 		else {
-        		System.out.println("Enter a valid number: ");
+        		System.out.printf("Enter a valid score: ");
     		}
 
 	}
