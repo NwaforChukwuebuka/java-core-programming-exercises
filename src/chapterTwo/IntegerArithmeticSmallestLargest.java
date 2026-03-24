@@ -1,6 +1,8 @@
+package chapterTwo;
+
 import java.util.Scanner;
 
-public class IntegerArithmeticSmallestAndLargest {
+public class IntegerArithmeticSmallestLargest {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);

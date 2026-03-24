@@ -1,9 +1,30 @@
+# Compiled / output
 *.class
-.idea/
 out/
+target/
+build/
+.gradle/
+
+# IntelliJ
+.idea/
 *.iml
 
-# Local helpers / scratch — not published
+# Project-specific (not tracked)
+/M/
+/docs/
+
+# Local scripts / scratch
 /runjava.ps1
 dayThree/fireDrill1/runjava.ps1
 dayThree/fireDrill1/test.py
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+
+# Logs / dumps
+*.log
+hs_err_pid*
+replay_pid*
