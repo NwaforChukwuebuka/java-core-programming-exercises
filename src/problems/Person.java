@@ -8,6 +8,11 @@ public class Person {
     List<Problem> problems = new ArrayList<>();
 
     public List<Problem> getUnsolvedProblems() {
-        return  new ArrayList<>();
+        return  problems;
+    }
+
+
+    public void addProblem(Problem newProblem) {
+        problems.add(newProblem);
     }
 }
