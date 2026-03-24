@@ -8,7 +8,13 @@ public class Person {
     List<Problem> problems = new ArrayList<>();
 
     public List<Problem> getUnsolvedProblems() {
-        return  problems;
+        List<Problem> unsolvedProblemList = new ArrayList<>();
+        for(Problem problem: problems){
+            if(problem.isSolved() == false) {
+                unsolvedProblemList.add(problem);
+            }
+        }
+        return unsolvedProblemList;
     }
 
 
