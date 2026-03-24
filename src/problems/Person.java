@@ -21,4 +21,8 @@ public class Person {
     public void addProblem(Problem newProblem) {
         problems.add(newProblem);
     }
+
+    public void solveProblem(Problem problem) {
+        problem.solve();
+    }
 }

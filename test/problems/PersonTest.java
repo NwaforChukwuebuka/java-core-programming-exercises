@@ -34,4 +34,16 @@ public class PersonTest {
         newProblem.solve();
         assertTrue(newPerson.getUnsolvedProblems().isEmpty());
     }
+
+    @Test
+    @DisplayName("Person can solve problems")
+    public void PersonCanSolveProblem(){
+        Person newPerson = new Person();
+
+        Problem newProblem = new Problem("School Fees", ProblemType.FINANCIAL);
+
+        newPerson.addProblem(newProblem);
+        newPerson.solveProblem(newProblem);
+        assertTrue(newPerson.getUnsolvedProblems().isEmpty());
+    }
 }
