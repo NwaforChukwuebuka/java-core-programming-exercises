@@ -13,4 +13,12 @@ public class ZoneCheckerTest {
 
         assertEquals("South East", checker.getZone("Enugu"));
     }
+
+    @Test
+    @DisplayName("Kano should return North West")
+    public void KanoFallUnderNorthWest() {
+        ZoneChecker checker = new ZoneChecker();
+
+        assertEquals("North West", checker.getZone("Kano"));
+    }
 }
