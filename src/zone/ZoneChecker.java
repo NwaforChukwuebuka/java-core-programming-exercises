@@ -2,7 +2,8 @@ package zone;
 
 public class ZoneChecker {
     public String getZone(String state) {
-        if (state == "Kano") {return  "North West";}
-        else return "South East";
+        if (state.equalsIgnoreCase("Kano")) {return  "North West";}
+        if (state.equalsIgnoreCase("Enugu")) {return  "South East";}
+        return null;
     }
 }

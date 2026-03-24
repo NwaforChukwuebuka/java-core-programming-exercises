@@ -21,4 +21,14 @@ public class ZoneCheckerTest {
 
         assertEquals("North West", checker.getZone("Kano"));
     }
+
+    @Test
+    @DisplayName("London should return 'null' " )
+    public void UnknownStateReturnNull() {
+        ZoneChecker checker = new ZoneChecker();
+
+        assertEquals(null, checker.getZone("London"));
+    }
+
+
 }
