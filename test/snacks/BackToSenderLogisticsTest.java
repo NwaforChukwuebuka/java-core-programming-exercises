@@ -19,10 +19,10 @@ public class BackToSenderLogisticsTest {
     @Test
     @DisplayName("Test calculateRiderWage Function")
     public void testCalculateRiderWageFunction() {
-        assertEquals(8000, logistics.calculateRiderWage());
-        assertEquals(13000, logistics.calculateRiderWage(55));
-        assertEquals(20850, logistics.calculateRiderWage(65));
-        assertEquals(47000, logistics.calculateRiderWage(80));
+        assertEquals(5480, logistics.calculateRiderWage(3));
+        assertEquals(16000, logistics.calculateRiderWage(55));
+        assertEquals(21250, logistics.calculateRiderWage(65));
+        assertEquals(45000, logistics.calculateRiderWage(80));
     }
 
     @Test
