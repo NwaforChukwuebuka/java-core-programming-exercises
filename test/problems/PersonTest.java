@@ -24,4 +24,14 @@ public class PersonTest {
         assertEquals(1, newPerson.getUnsolvedProblems().size());
     }
 
+    @Test
+    @DisplayName("Solved problem should not appear in unsolved problems")
+    public void solvedProblemShouldNotBeReturned() {
+        Person newPerson = new Person();
+
+        Problem newProblem = new Problem("School Fees", ProblemType.FINANCIAL);
+        newPerson.addProblem(newProblem);
+        newProblem.solve();
+        assertTrue(newPerson.getUnsolvedProblems().isEmpty());
+    }
 }
