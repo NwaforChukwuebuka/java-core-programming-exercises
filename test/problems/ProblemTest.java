@@ -22,7 +22,6 @@ public class ProblemTest {
         assertEquals(ProblemType.FINANCIAL, newProblem.getType());
     }
 
-
     @Test
     @DisplayName("Every new problem should not be solved")
     public void newProblemShouldNotBeSolved(){
