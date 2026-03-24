@@ -5,10 +5,9 @@ public class Problem {
     private ProblemType type;
     private boolean isSolved = false;
 
-    public Problem(String name, ProblemType type, boolean isSolved) {
+    public Problem(String name, ProblemType type) {
         this.name = name;
         this.type = type;
-        this.isSolved = isSolved;
 
     }
 
@@ -22,5 +21,9 @@ public class Problem {
 
     public boolean isSolved() {
         return isSolved;
+    }
+
+    public void solve() {
+        this.isSolved = true;
     }
 }
