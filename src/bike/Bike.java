@@ -25,8 +25,9 @@ public class Bike {
     }
 
     public void accelerate() {
-        speed += 1;
         if(!poweredOn) return;
+        speed += 1;
+
     }
 
     public int getGear() {
