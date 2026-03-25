@@ -44,4 +44,14 @@ public class BikeTest {
         bike.accelerate();
         assertEquals(1, bike.getSpeed());
     }
+
+    @Test
+    @DisplayName("Bike accelerates with increment of 2 in Gear 2")
+    void bikeAcceleratesBy2InGearTwo() {
+        bike.powerOn();
+        bike.accelerate();
+        bike.accelerate();
+        assertEquals(2, bike.getSpeed());
+    }
 }
+
