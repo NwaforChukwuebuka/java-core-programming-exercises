@@ -24,7 +24,7 @@ public class Bike {
         return  speed;
     }
 
-    public void accelerateInGear1() {
+    public void accelerate() {
         speed += 1;
     }
 }
