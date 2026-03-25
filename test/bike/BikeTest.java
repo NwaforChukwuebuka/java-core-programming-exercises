@@ -56,7 +56,18 @@ public class BikeTest {
         assertEquals(10, bike.getSpeed());
     }
 
+    @Test
+    @DisplayName("Bike switch from Gear 1 to Gear 2")
+    void bikeSwitchFromGearOneToGearTwo() {
+        bike.powerOn();
+        for (int i = 0; i < 21; i++) {
+            bike.accelerate();
+        }
 
+        bike.accelerate();
+
+        assertEquals(2, bike.getGear());
+    }
 
 }
 

@@ -28,4 +28,11 @@ public class Bike {
         speed += 1;
         if(!poweredOn) return;
     }
+
+    public int getGear() {
+        if (speed <= 20) return 1;
+        if (speed <= 30) return 2;
+        if (speed <= 40) return 3;
+        return 4;
+    }
 }
