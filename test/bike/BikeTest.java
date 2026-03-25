@@ -46,12 +46,16 @@ public class BikeTest {
     }
 
     @Test
-    @DisplayName("Bike accelerates with increment of 2 in Gear 2")
-    void bikeAcceleratesBy2InGearTwo() {
+    void bikeAcceleratesMultipleTimesInGearOne() {
         bike.powerOn();
         bike.accelerate();
         bike.accelerate();
-        assertEquals(2, bike.getSpeed());
+        bike.accelerate();
+
+        assertEquals(3, bike.getSpeed());
     }
+
+
+
 }
 
