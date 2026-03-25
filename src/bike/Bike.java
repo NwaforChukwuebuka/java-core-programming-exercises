@@ -2,6 +2,7 @@ package bike;
 
 public class Bike {
     private boolean poweredOn;
+    private int speed = 0;
 
     public void powerOn() {
         poweredOn = true;
@@ -19,4 +20,7 @@ public class Bike {
         return !poweredOn;
     }
 
+    public int getSpeed() {
+        return  speed;
+    }
 }
