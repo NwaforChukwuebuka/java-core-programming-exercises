@@ -48,11 +48,12 @@ public class BikeTest {
     @Test
     void bikeAcceleratesMultipleTimesInGearOne() {
         bike.powerOn();
-        bike.accelerate();
-        bike.accelerate();
-        bike.accelerate();
+        for (int i = 0; i < 10; i++)
+        {
+            bike.accelerate();
+        }
 
-        assertEquals(3, bike.getSpeed());
+        assertEquals(10, bike.getSpeed());
     }
 
 
