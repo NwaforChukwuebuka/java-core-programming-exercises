@@ -10,4 +10,13 @@ public class Bike {
     public boolean isBikePoweredOn() {
         return poweredOn;
     }
+
+    public void powerOff() {
+        poweredOn = false;
+    }
+
+    public boolean isBikePoweredOff() {
+        return !poweredOn;
+    }
+
 }

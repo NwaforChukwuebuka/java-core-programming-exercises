@@ -16,9 +16,17 @@ public class BikeTest {
     }
 
     @Test
-    @DisplayName("Test bike can be turned on")
-    public void testBikeCanBeTurnedOn() {
+    @DisplayName("Test bike can be turned ON")
+    public void BikeCanBeTurnedOn() {
         bike.powerOn();
         assertTrue(bike.isBikePoweredOn());
+    }
+
+    @Test
+    @DisplayName("Test bike can be turned OFF")
+    public void BikeCanBeTurnedOff() {
+        bike.powerOn();
+        bike.powerOff();
+        assertTrue(bike.isBikePoweredOff());
     }
 }
