@@ -83,7 +83,10 @@ public class AccountTest {
         assertThrows(InvalidPinException.class, ()-> account.deposit(BigDecimal.valueOf(5_000), "Incorrect Pin"));
     }
 
-
+    @Test
+    public void checkBalanceWithWrongPin_throwsExceptionTest(){
+        assertThrows(InvalidPinException.class, ()-> account.checkBalance("Incorrect Pin"));
+    }
 
 
 
