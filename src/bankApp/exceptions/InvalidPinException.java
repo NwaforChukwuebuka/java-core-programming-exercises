@@ -1,4 +1,7 @@
 package bankApp.exceptions;
 
-public class InvalidPinException {
+public class InvalidPinException extends BankAppException {
+    public InvalidPinException(String message) {
+        super(message);
+    }
 }
