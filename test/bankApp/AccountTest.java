@@ -88,6 +88,11 @@ public class AccountTest {
         assertThrows(InvalidPinException.class, ()-> account.checkBalance("Incorrect Pin"));
     }
 
+    @Test
+    public void openAccount_returnsAccountNumberTest() {
+        Bank bank = new Bank();
+        assertEquals(1,bank.getAccountNumber());
+    }
 
 
 }
