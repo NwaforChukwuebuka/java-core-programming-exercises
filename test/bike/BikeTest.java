@@ -69,5 +69,16 @@ public class BikeTest {
         assertEquals(2, bike.getGear());
     }
 
+    void bikeSwitchFromGearTwoToGearThree() {
+        bike.powerOn();
+        for (int i = 21; i < 30; i++) {
+            bike.accelerate();
+        }
+
+        bike.accelerate();
+
+        assertEquals(3, bike.getGear());
+    }
+
 }
 
