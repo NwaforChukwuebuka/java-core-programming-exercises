@@ -20,6 +20,7 @@ public class Account {
     }
 
     public void deposit(BigDecimal amount, String pin) {
+        validate(pin);
         validate(amount);
         this.balance = balance.add(amount);
     }
