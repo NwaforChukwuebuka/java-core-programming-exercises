@@ -1,8 +1,8 @@
 package bankApp;
 
 public class Bank {
-
+    int accountNumber = 0;
     public int getAccountNumber() {
-        return 1;
+        return accountNumber += 1;
     }
 }

@@ -18,4 +18,10 @@ public class BankTest {
         assertEquals(1, bank.getAccountNumber());
     }
 
+    @Test
+    public void openTwoAccounts_returnsIncrementingAccountNumbersTest() {
+        assertEquals(1, bank.getAccountNumber());
+        assertEquals(2, bank.getAccountNumber());
+    }
+
 }
