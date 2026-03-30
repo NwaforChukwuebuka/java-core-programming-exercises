@@ -1,11 +1,17 @@
 package weekOne;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class KataTest {
 
-    private final Kata kata = new Kata();
+    private Kata kata;
+
+    @BeforeEach
+    void setUp() {
+        kata = new Kata();
+    }
 
     @Test
     void isEven_returnsTrueForEvenIntegers() {

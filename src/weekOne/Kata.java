@@ -50,7 +50,7 @@ public class Kata {
     }
 
     public long factorialOf(int integer) {
-        if (integer < 0) return 0; // Or throw exception, but 0 is safe-ish for this context
+        if (integer < 0) return 0;
         long factorial = 1;
         for (int i = 1; i <= integer; i++) {
             factorial *= i;
