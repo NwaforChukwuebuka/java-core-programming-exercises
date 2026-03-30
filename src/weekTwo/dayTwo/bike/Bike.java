@@ -1,4 +1,4 @@
-package bike;
+package weekTwo.dayTwo.bike;
 
 public class Bike {
     private boolean poweredOn;
