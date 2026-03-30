@@ -1,4 +1,6 @@
-package problems;
+package weekTwo.dayOne.problems;
+
+import weekTwo.dayOne.enums.ProblemType;
 
 public class Problem {
     private String name;
